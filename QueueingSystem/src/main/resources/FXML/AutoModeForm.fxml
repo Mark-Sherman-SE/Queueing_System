@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.AutoModeFormController">
+   <children>
+      <VBox prefHeight="720.0" prefWidth="1280.0" spacing="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="sourceTable" prefHeight="257.0" prefWidth="1120.0">
+              <columns>
+                <TableColumn fx:id="sourceNumber" prefWidth="113.00003051757812" text="Номер источника" />
+                <TableColumn fx:id="sourceRequestsNumber" prefWidth="54.0" text="Создано" />
+                  <TableColumn fx:id="sourceDoneRequestsNumber" prefWidth="73.0" text="Выполнено" />
+                  <TableColumn fx:id="sourceRejectedRequestsNumber" prefWidth="72.0" text="Отклонено" />
+                  <TableColumn fx:id="sourceFailureProbability" prefWidth="122.0" text="Вероятность отказа" />
+                  <TableColumn fx:id="sourceAverageTimeInSystem" prefWidth="125.0" text="Ср. время в системе" />
+                  <TableColumn fx:id="sourceAverageTimeOfWaiting" prefWidth="127.0" text="Ср. время ожидания" />
+                  <TableColumn fx:id="sourceAverageProcessTime" prefWidth="142.0" text="Ср. время выполнения" />
+                  <TableColumn fx:id="sourceDispersionWaitingTime" prefWidth="207.0" text="Дисперсия ср. времени ожидания" />
+                  <TableColumn fx:id="sourceDispersionProcessTime" minWidth="0.0" prefWidth="246.0" text="Дисперсия ср. времени выполнения" />
+              </columns>
+            </TableView>
+            <TableView fx:id="deviceTable" prefHeight="256.0" prefWidth="1120.0">
+              <columns>
+                <TableColumn fx:id="deviceNumber" prefWidth="119.00001525878906" text="Номер прибора" />
+                <TableColumn fx:id="deviceTimeOfWork" prefWidth="157.0" text="Время работы прибора" />
+                  <TableColumn fx:id="deviceUtilizationRate" prefWidth="243.0" text="Коэффициент использования прибора" />
+              </columns>
+            </TableView>
+            <VBox alignment="CENTER" prefHeight="115.0" prefWidth="1280.0" spacing="30.0">
+               <children>
+                  <Button fx:id="runButton" mnemonicParsing="false" onAction="#onClickRun" text="Запустить">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitButton" mnemonicParsing="false" onAction="#onClickExit" text="Выход">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

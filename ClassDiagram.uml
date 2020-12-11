@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>app.Main</OriginalElement>
+  <nodes>
+    <node x="1493.5674202829687" y="981.0">app.analytics.DeviceAnalytics</node>
+    <node x="1272.0275234927667" y="1596.0">app.analytics.CollectedData</node>
+    <node x="1757.5674202829687" y="728.0">app.analytics.RealTimeSnapshot</node>
+    <node x="1113.5674202829687" y="684.0">app.analytics.SourceAnalytics</node>
+    <node x="249.0" y="970.0">app.Buffer</node>
+    <node x="567.1507536163017" y="2106.0">app.Modulator</node>
+    <node x="1562.9650234927667" y="2959.0">app.controllers.MenuFormController</node>
+    <node x="1637.6924202829687" y="198.5">app.analytics.Action</node>
+    <node x="1008.8174202829686" y="3457.0">app.Main</node>
+    <node x="601.0" y="959.0">app.Source</node>
+    <node x="595.439269876465" y="0.0">app.Request</node>
+    <node x="0.0" y="882.0">app.Device</node>
+    <node x="24.600000000000136" y="1662.0">app.SelectionManager</node>
+    <node x="845.3174202829686" y="3694.0">app.controllers.StepModeFormController</node>
+    <node x="862.2033826945408" y="2794.0">app.controllers.AutoModeFormController</node>
+    <node x="562.3174202829684" y="2915.0">app.controllers.SettingsFormController</node>
+    <node x="533.8333333333334" y="1728.0">app.ProductionManager</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="app.Buffer" target="app.Request">
+      <point x="-82.75" y="-105.0" />
+      <point x="331.75" y="634.0" />
+      <point x="677.848360785556" y="634.0" />
+      <point x="-47.09090909090901" y="292.0" />
+    </edge>
+    <edge source="app.SelectionManager" target="app.Device">
+      <point x="-94.79999999999995" y="-149.0" />
+      <point x="48.30000000000018" y="1576.0" />
+      <point x="28.5" y="1576.0" />
+      <point x="-85.5" y="193.0" />
+    </edge>
+    <edge source="app.SelectionManager" target="app.Request">
+      <point x="94.79999999999995" y="-149.0" />
+      <point x="238.5" y="624.0" />
+      <point x="654.3029062401013" y="624.0" />
+      <point x="-70.63636363636374" y="292.0" />
+    </edge>
+    <edge source="app.analytics.CollectedData" target="app.analytics.DeviceAnalytics">
+      <point x="-17.875000000000114" y="-215.0" />
+      <point x="1468.6525234927667" y="1516.0" />
+      <point x="1524.0674202829687" y="1516.0" />
+      <point x="-91.5" y="94.0" />
+    </edge>
+    <edge source="app.Device" target="app.Request">
+      <point x="-57.0" y="-193.0" />
+      <point x="57.0" y="604.0" />
+      <point x="607.2119971491923" y="604.0" />
+      <point x="-117.72727272727275" y="292.0" />
+    </edge>
+    <edge source="app.controllers.AutoModeFormController" target="app.analytics.DeviceAnalytics">
+      <point x="197.25" y="-291.5" />
+      <point x="1322.4533826945408" y="2774.0" />
+      <point x="1711.5275234927667" y="2774.0" />
+      <point x="1711.5275234927667" y="1536.0" />
+      <point x="1707.0674202829687" y="1536.0" />
+      <point x="91.5" y="94.0" />
+    </edge>
+    <edge source="app.ProductionManager" target="app.Request">
+      <point x="-112.875" y="-83.0" />
+      <point x="571.4583333333334" y="1576.0" />
+      <point x="590.5" y="1576.0" />
+      <point x="590.5" y="654.0" />
+      <point x="724.939269876465" y="654.0" />
+      <point x="0.0" y="292.0" />
+    </edge>
+    <edge source="app.Modulator" target="app.ProductionManager">
+      <point x="-11.5" y="-314.0" />
+      <point x="670.6507536163017" y="2046.0" />
+      <point x="609.0833333333334" y="2046.0" />
+      <point x="-75.25" y="83.0" />
+    </edge>
+    <edge source="app.Modulator" target="app.analytics.CollectedData">
+      <point x="57.5" y="-314.0" />
+      <point x="739.6507536163017" y="2066.0" />
+      <point x="1343.5275234927667" y="2066.0" />
+      <point x="-143.0" y="215.0" />
+    </edge>
+    <edge source="app.controllers.StepModeFormController" target="app.analytics.RealTimeSnapshot">
+      <point x="210.8571428571429" y="-467.5" />
+      <point x="1302.1745631401113" y="3674.0" />
+      <point x="2010.5674202829687" y="3674.0" />
+      <point x="2010.5674202829687" y="1576.0" />
+      <point x="2029.8174202829687" y="1576.0" />
+      <point x="123.75" y="347.0" />
+    </edge>
+    <edge source="app.Modulator" target="app.Request">
+      <point x="34.5" y="-314.0" />
+      <point x="716.6507536163017" y="2056.0" />
+      <point x="992.3382536163018" y="2056.0" />
+      <point x="992.3382536163018" y="664.0" />
+      <point x="795.5756335128287" y="664.0" />
+      <point x="70.63636363636374" y="292.0" />
+    </edge>
+    <edge source="app.Main" target="app.controllers.SettingsFormController">
+      <point x="-73.33333333333331" y="-93.5" />
+      <point x="1017.9840869496352" y="3437.0" />
+      <point x="603.3174202829684" y="3437.0" />
+      <point x="-82.0" y="170.5" />
+    </edge>
+    <edge source="app.controllers.StepModeFormController" target="app.Modulator">
+      <point x="-140.57142857142856" y="-467.5" />
+      <point x="950.74599171154" y="3664.0" />
+      <point x="551.8174202829684" y="3664.0" />
+      <point x="551.8174202829684" y="2764.0" />
+      <point x="624.6507536163017" y="2764.0" />
+      <point x="-57.5" y="314.0" />
+    </edge>
+    <edge source="app.Modulator" target="app.Buffer">
+      <point x="-57.5" y="-314.0" />
+      <point x="624.6507536163017" y="2066.0" />
+      <point x="433.7199741315592" y="2066.0" />
+      <point x="433.7199741315592" y="1576.0" />
+      <point x="331.75" y="1576.0" />
+      <point x="-82.75" y="105.0" />
+    </edge>
+    <edge source="app.controllers.MenuFormController" target="app.Main">
+      <point x="0.0" y="126.5" />
+      <point x="1694.9650234927667" y="3427.0" />
+      <point x="1146.3174202829687" y="3427.0" />
+      <point x="55.0" y="-93.5" />
+    </edge>
+    <edge source="app.ProductionManager" target="app.Source">
+      <point x="-37.625" y="-83.0" />
+      <point x="646.7083333333334" y="1576.0" />
+      <point x="642.6666666666667" y="1576.0" />
+      <point x="-83.33333333333326" y="116.0" />
+    </edge>
+    <edge source="app.controllers.AutoModeFormController" target="app.Main">
+      <point x="0.0" y="291.5" />
+      <point x="1125.2033826945408" y="3397.0" />
+      <point x="1091.3174202829687" y="3397.0" />
+      <point x="0.0" y="-93.5" />
+    </edge>
+    <edge source="app.analytics.CollectedData" target="app.analytics.Action">
+      <point x="-53.625000000000114" y="-215.0" />
+      <point x="1432.9025234927667" y="1506.0" />
+      <point x="1483.0674202829687" y="1506.0" />
+      <point x="1483.0674202829687" y="664.0" />
+      <point x="1669.0257536163022" y="664.0" />
+      <point x="-62.66666666666663" y="93.5" />
+    </edge>
+    <edge source="app.Modulator" target="app.SelectionManager">
+      <point x="-103.5" y="-314.0" />
+      <point x="578.6507536163017" y="2086.0" />
+      <point x="83.85000000000014" y="2086.0" />
+      <point x="-59.25" y="149.0" />
+    </edge>
+    <edge source="app.analytics.CollectedData" target="app.analytics.SourceAnalytics">
+      <point x="-196.6250000000001" y="-215.0" />
+      <point x="1289.9025234927667" y="1576.0" />
+      <point x="1244.0674202829687" y="1576.0" />
+      <point x="-43.5" y="391.0" />
+    </edge>
+    <edge source="app.analytics.CollectedData" target="app.analytics.RealTimeSnapshot">
+      <point x="89.37499999999989" y="-215.0" />
+      <point x="1575.9025234927667" y="1546.0" />
+      <point x="1782.3174202829687" y="1546.0" />
+      <point x="-123.75" y="347.0" />
+    </edge>
+    <edge source="app.controllers.SettingsFormController" target="app.Main">
+      <point x="0.0" y="170.5" />
+      <point x="685.3174202829684" y="3427.0" />
+      <point x="1036.3174202829687" y="3427.0" />
+      <point x="-55.0" y="-93.5" />
+    </edge>
+    <edge source="app.Source" target="app.Request">
+      <point x="-62.5" y="-116.0" />
+      <point x="663.5" y="664.0" />
+      <point x="748.4847244219195" y="664.0" />
+      <point x="23.545454545454504" y="292.0" />
+    </edge>
+    <edge source="app.controllers.SettingsFormController" target="app.Modulator">
+      <point x="-61.5" y="-170.5" />
+      <point x="623.8174202829684" y="2774.0" />
+      <point x="662.984086949635" y="2774.0" />
+      <point x="-19.166666666666742" y="314.0" />
+    </edge>
+    <edge source="app.controllers.AutoModeFormController" target="app.analytics.SourceAnalytics">
+      <point x="65.75" y="-291.5" />
+      <point x="1190.9533826945408" y="1576.0" />
+      <point x="1157.0674202829687" y="1576.0" />
+      <point x="-130.5" y="391.0" />
+    </edge>
+    <edge source="app.controllers.AutoModeFormController" target="app.Modulator">
+      <point x="-197.25" y="-291.5" />
+      <point x="927.9533826945408" y="2764.0" />
+      <point x="739.6507536163017" y="2764.0" />
+      <point x="57.5" y="314.0" />
+    </edge>
+    <edge source="app.Main" target="app.controllers.StepModeFormController">
+      <point x="55.0" y="93.5" />
+      <point x="1146.3174202829687" y="3674.0" />
+      <point x="1161.603134568683" y="3674.0" />
+      <point x="70.28571428571433" y="-467.5" />
+    </edge>
+    <edge source="app.Main" target="app.controllers.AutoModeFormController">
+      <point x="-18.333333333333314" y="-93.5" />
+      <point x="1072.9840869496352" y="3407.0" />
+      <point x="949.8700493612075" y="3407.0" />
+      <point x="-175.33333333333326" y="291.5" />
+    </edge>
+    <edge source="app.analytics.CollectedData" target="app.Request">
+      <point x="-89.37500000000011" y="-215.0" />
+      <point x="1397.1525234927667" y="1496.0" />
+      <point x="1472.0674202829687" y="1496.0" />
+      <point x="1472.0674202829687" y="644.0" />
+      <point x="842.6665426037378" y="644.0" />
+      <point x="117.72727272727275" y="292.0" />
+    </edge>
+    <edge source="app.controllers.StepModeFormController" target="app.Main">
+      <point x="-70.28571428571428" y="-467.5" />
+      <point x="1021.0317059972542" y="3674.0" />
+      <point x="1036.3174202829687" y="3674.0" />
+      <point x="-55.0" y="93.5" />
+    </edge>
+    <edge source="app.Main" target="app.controllers.MenuFormController">
+      <point x="36.66666666666663" y="-93.5" />
+      <point x="1127.9840869496352" y="3417.0" />
+      <point x="1606.9650234927667" y="3417.0" />
+      <point x="-88.0" y="126.5" />
+    </edge>
+    <edge source="app.analytics.SourceAnalytics" target="app.Request">
+      <point x="0.0" y="-391.0" />
+      <point x="1287.5674202829687" y="654.0" />
+      <point x="819.1210880582832" y="654.0" />
+      <point x="94.18181818181824" y="292.0" />
+    </edge>
+    <edge source="app.analytics.RealTimeSnapshot" target="app.analytics.Action">
+      <point x="-74.25" y="-347.0" />
+      <point x="1831.8174202829687" y="664.0" />
+      <point x="1731.6924202829687" y="664.0" />
+      <point x="0.0" y="93.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6" x="980.8333333333334" y="420.6666666666667" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
